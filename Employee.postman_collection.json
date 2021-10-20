@@ -1,0 +1,90 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Employee",
+		"_postman_id": "d14119b4-eec1-7730-edc6-4470d63b80e1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get by id",
+			"request": {
+				"url": "http://localhost:8080/employees/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": "http://localhost:8080/employees/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "admin12",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all employees",
+			"request": {
+				"url": "http://localhost:8080/employees",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"url": "http://localhost:8080/employees",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"madan\",\n\t\"middleInitial\": \"m\",\n\t\"lastName\": \"jana\",\n\t\"dob\": \"2000-01-01\",\n\t\"dateEmployment\": \"2020-01-01\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"url": "http://localhost:8080/employees",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"firstName\": \"madan\",\n\t\"middleInitial\": \"m\",\n\t\"lastName\": \"jana\",\n\t\"dob\": \"2000-01-01\",\n\t\"dateEmployment\": \"2020-01-01\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
