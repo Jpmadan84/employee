@@ -6,6 +6,8 @@ To run the project follow the following steps
 2. download the file target/employee-0.0.1-SNAPSHOT.jar to the local machine in some folder
 3. open command prompt and go to the folder where you downloaded the file mentioned in previous step and run the following command
     java -jar employee-0.0.1-SNAPSHOT.jar
+    
+    
 The application will start running
 
 Note: Please make sure that port 8080 is not being used by other application in the local machine, otherwise this application will not start. 
